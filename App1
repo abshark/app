@@ -1,0 +1,63 @@
+import 'package:stack/stack.dart';
+import 'dart:io';
+class tech{
+      String stack[];
+      String name;
+      int top;
+      public void addStacks(String s){
+          stack.push(String s);
+      }
+      public void setMentorOrLearner(int i){
+        int mentor;
+         if(i==1)
+           mentor=1;
+        else {
+          mentor =0;
+        }
+      }
+      public void setAvailableTime(int from,int to){
+          int from =from;
+          int to  =  to;
+      }
+      public String getMentor(String stack,int time){
+          if(time>from && time<to)
+          return "yes"
+          else {
+            no
+          }
+      }
+ }
+class test{
+public static void main(String args[]){
+  stdout.write("What's your name? ");
+  var name1 = stdin.readLineSync();
+  c.name = name1;
+
+    var ob = new tech;
+    int n,b,c,d,e;
+    String a;
+    stdout.write("no of interested/expertised feilds?"); 
+    var n = stdin.readLineSync();
+    while(n>0){
+        stdout.write("enter feild ");
+          var a = stdin.readLineSync();
+          addStacks(a);
+        n--;
+    }
+    stdout.write("pree 1 if you are mentor"); 
+    var b = stdin.readLineSync();
+    if(b>0)
+    ob.setmentor(1);
+    if(mentor>0){
+    stdout.write("enter your available time (from-to)"); 
+    var c= stdin.readLineSync();
+    var d= stdin.readLineSync();
+    setAvailableTime(c,d);
+  }
+  else {
+    stdout.write("what time you prefer to get mentor"); 
+    var e= stdin.readLineSync();
+    ob.getMentor(stack,e);
+  }
+}
+}
